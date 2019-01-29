@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38c4f63b-8e93-4e3a-8514-39f1647f5ddb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ng-bubble.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ng-bubble.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/interfaces.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/interfaces.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/flows/issue.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/flows/issue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/flows/issue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/flows/issue.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/git/branch.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/git/branch.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/git/branch.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/git/branch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/git/branch.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/git/branch.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/inquirerer.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/inquirerer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/inquirerer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/inquirerer.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/utility/fs.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/utility/fs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/utility/fs.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/utility/fs.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/utility/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/utility/misc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/utility/misc.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/utility/misc.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/flows/issue.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/flows/issue.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/git/branch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/git/branch.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inquirerer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/inquirerer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/fs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/fs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/misc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/misc.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/flows/issue.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="154">
+              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -47,10 +29,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/git/branch.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            <state relative-caret-position="229">
+              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -95,11 +86,6 @@
               <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/flows/commit.ts">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -179,13 +165,13 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="D:" value="master" />
+        <entry key="$PROJECT_DIR$" value="BOT-812#Bug##There-are-some-observations-in-DB-search-in-Sessions-page" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/src/ng-bubble-local.json" />
         <option value="$PROJECT_DIR$/lib/src/line-finder.js" />
         <option value="$PROJECT_DIR$/src/config.ts" />
         <option value="$PROJECT_DIR$/src/line-finder.ts" />
@@ -236,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/utility/fs.ts" />
         <option value="$PROJECT_DIR$/src/inquirerer.ts" />
         <option value="$PROJECT_DIR$/src/git/branch.ts" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -392,12 +379,12 @@
       <workItem from="1548608367300" duration="3000" />
       <workItem from="1548608374574" duration="28970000" />
       <workItem from="1548640665652" duration="2036000" />
-      <workItem from="1548796325724" duration="7324000" />
+      <workItem from="1548796325724" duration="7447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189949000" />
+    <option name="totallyTimeSpent" value="190072000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,7 +413,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50158983" side_tool="true" weight="0.3811189" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49841017" visible="true" weight="0.45104894" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49841017" visible="true" weight="0.58916086" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -608,13 +595,6 @@
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -720,23 +700,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/git/branch.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/flows/issue.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="154">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/git/branch.ts">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
