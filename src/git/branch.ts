@@ -1,12 +1,24 @@
 import {runCommand} from "../utility/misc";
+import {IIssue} from "../../interfaces";
 
 export enum EIssueType {
-  Bug="Bug",
-  Story="Story",
+  Bug = "Bug",
+  Story = "Story",
 }
-export function createBranch(data:{issuetype_name:EIssueType, key:string, fields_summary:string}) {
-  let {key,fields_summary,issuetype_name} = data;
-  let branchName =  `${key}#${issuetype_name}##${fields_summary}`;
-  let cmd = `git branch ${branchName}`;
-  return runCommand(cmd);
+
+export async function createBranchByIssue(data: IIssue) {
+  let key = data.key;
+  let issuetype_name = data.fields.issuetype.name;
+  let fields_summary = data.fields.summary;
+
+  let branchName = `${key}#${issuetype_name}##${fields_summary}`;
+  branchName = branchName.split(' ').join('-');
+  let cmd = `git branch "${branchName}"`;
+  await (runCommand(cmd));
+  return branchName;
+}
+
+
+export function checkoutBranch(branch: string) {
+  return runCommand(`git checkout "${branch}"`);
 }

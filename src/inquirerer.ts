@@ -1,6 +1,6 @@
 const inquirer: any = require('inquirer');
 export function ask(data:{message:string,choices:string[], type:string}) {
-  return inquirer.prompt([{...data, name:name}]);
+  return inquirer.prompt([{...data, name:'name'}]);
 }
 
 // export function askInput() {

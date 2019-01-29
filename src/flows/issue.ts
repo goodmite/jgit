@@ -1,24 +1,36 @@
 import {listIssues} from "../jira/issues";
-import {IIssue} from "../../interfaces";
+import {IIssue, IIssueList} from "../../interfaces";
 import {ask} from "../inquirerer";
-import {createBranch} from "../git/branch";
+import {checkoutBranch, createBranchByIssue} from "../git/branch";
 
 export async function issueFlowInit() {
-  let issues:IIssue[] = await listIssues();
-  let issueSummeryList:string[] =  issues.map((issue)=>{
+  let iIssueList: IIssueList = await listIssues();
+  let issueSummeryList: string[] = iIssueList.issues.map((issue) => {
     let key = issue.key;
     let summary = issue.fields.summary;
     return `${key} - ${summary}`
   });
 
-  let selectedIssueSummery:string = (await ask({
+  let selectedIssueSummery: string = (await ask({
     message: 'Please select an issue:',
     choices: issueSummeryList,
     type: 'list'
   })).name;
 
   let selectedIssueIndex = issueSummeryList.findIndex(el => el === selectedIssueSummery);
-  let selectedIssue:IIssue = issues[selectedIssueIndex];
+  let selectedIssue: IIssue = iIssueList.issues[selectedIssueIndex];
 
-  createBranch({fields_summary:selectedIssue.fields.summary, key:selectedIssue.key, issuetype_name:selectedIssue.fields.issuetype.name});
+  let branchName = await createBranchByIssue(selectedIssue);
+  if(branchName){
+    console.log(branchName + ' created');
+  }else {
+    console.log('error creating branch');
+    return;
+  }
+
+  try {
+    await checkoutBranch(branchName);
+  }catch (e) {
+    console.log(e);
+  }
 }

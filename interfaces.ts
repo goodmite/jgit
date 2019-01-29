@@ -1,6 +1,6 @@
 import {EIssueType} from "./src/git/branch";
 
-export interface IIssues {
+export interface IIssueList {
   "expand": "schema,names",
   "startAt": 0,
   "maxResults": 50,
