@@ -27,12 +27,14 @@
   "license": "MIT",
   "dependencies": {
     "@types/express": "^4.16.0",
+    "@types/jira-client": "^6.4.1",
     "@types/node": "^10.12.18",
     "commander": "^2.3.0",
     "content-disposition": "^0.3.0",
     "cors": "^2.8.5",
     "express": "^4.9.4",
     "inquirer": "^6.2.1",
+    "jira-client": "^6.5.1",
     "tcp-port-used": "^1.0.1",
     "terminal-kit": "^1.26.8",
     "typescript": "^3.2.2"

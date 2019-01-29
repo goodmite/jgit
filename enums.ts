@@ -1,4 +1,6 @@
-export enum EIdeNames {
-    VSCODE = "VSCODE",
-    WEBSTORM = "WEBSTORM"
+export enum EActions {
+  UserStory='UserStory',
+  BugFixes='BugFixes',
+  Refactor='Refactor',
+  Commit='Commit',
 }
