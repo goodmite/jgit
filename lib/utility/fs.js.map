@@ -1,1 +1,0 @@
-{"version":3,"file":"fs.js","sourceRoot":"","sources":["../../src/utility/fs.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,MAAM,IAAI,GAAG,OAAO,CAAC,MAAM,CAAC,CAAC;AAC7B,MAAM,QAAQ,GAAG,IAAI,CAAC,SAAS,CAAC,OAAO,CAAC,IAAI,CAAC,CAAC,QAAQ,CAAC,CAAC;AAExD,SAAsB,aAAa,CAAC,IAAW;;QAC7C,OAAO,QAAQ,CAAC,IAAI,CAAC,CAAC;IACxB,CAAC;CAAA;AAFD,sCAEC"}
