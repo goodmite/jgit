@@ -1,6 +1,12 @@
 export enum EActions {
-  UserStory='UserStory',
-  BugFixes='BugFixes',
-  Refactor='Refactor',
-  Commit='Commit',
+  Story = 'Story',
+  BugFixes = 'Bug',
+  Refactor = 'Refactor',
+  Commit = 'Commit',
+}
+
+export enum EMainBranches {
+  develop='develop',
+  staging='staging',
+  master='master',
 }

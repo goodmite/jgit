@@ -1,11 +1,14 @@
 import {listIssues} from "../jira/issues";
 import {IIssue, IIssueList} from "../../interfaces";
 import {ask} from "../inquirerer";
-import {checkoutBranch, createBranchByIssue} from "../git/branch";
+import {checkoutBranch, createBranchByIssue, EIssueType} from "../git/branch";
 
-export async function issueFlowInit() {
-  let iIssueList: IIssueList = await listIssues();
-  let issueSummeryList: string[] = iIssueList.issues.map((issue) => {
+export async function issueFlowInit(issuetype:EIssueType) {
+  let issueList: IIssueList = await listIssues();
+  let issues = issueList.issues.filter((e)=>{
+    return e.fields.issuetype.name === issuetype
+  });
+  let issueSummeryList: string[] = issues.map((issue) => {
     let key = issue.key;
     let summary = issue.fields.summary;
     return `${key} - ${summary}`
@@ -18,7 +21,7 @@ export async function issueFlowInit() {
   })).name;
 
   let selectedIssueIndex = issueSummeryList.findIndex(el => el === selectedIssueSummery);
-  let selectedIssue: IIssue = iIssueList.issues[selectedIssueIndex];
+  let selectedIssue: IIssue = issues[selectedIssueIndex];
 
   let branchName = await createBranchByIssue(selectedIssue);
   if(branchName){

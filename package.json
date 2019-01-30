@@ -4,7 +4,7 @@
   "description": "Opens your angular component to vscode",
   "main": "ng-bubble.js",
   "scripts": {
-    "start": "nodemon lib/src/ng-bubble.js",
+    "start": "node lib/src/jgit.js",
     "build-be": "tsc -w",
     "git": "git add . && git commit",
     "postgit": "git push origin master"
@@ -30,13 +30,8 @@
     "@types/jira-client": "^6.4.1",
     "@types/node": "^10.12.18",
     "commander": "^2.3.0",
-    "content-disposition": "^0.3.0",
-    "cors": "^2.8.5",
-    "express": "^4.9.4",
     "inquirer": "^6.2.1",
     "jira-client": "^6.5.1",
-    "tcp-port-used": "^1.0.1",
-    "terminal-kit": "^1.26.8",
     "typescript": "^3.2.2"
   },
   "preferGlobal": true,

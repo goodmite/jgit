@@ -13,10 +13,8 @@ const jira = new JiraApi({
 
 export async function listIssues() {
 
-  return readFileAsync(join(__dirname, '/../../../issues.json'));
+  // return readFileAsync(join(__dirname, '/../../../issues.json'));
 
-  // return jira.getUsersIssues('sandeepkumar.g', false)
-  //   .then((val)=>{
-  //     console.log(val);
-  //   });
+  let x = await jira.getUsersIssues('sandeepkumar.g', false);
+  return x;
 }
